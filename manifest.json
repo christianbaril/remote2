@@ -1,8 +1,8 @@
 {
-  "author": "Novik",
+  "author": "Novik modded by mrb",
   "applications": {
     "gecko": {
-      "id": "torrent_uploader@xirvik.com",
+      "id": "torrent_uploader@wickedsun.org",
       "strict_min_version": "56.0"
     }
    },
