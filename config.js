@@ -16,10 +16,10 @@ net.xirvik.seedbox = (function(my)
 			messageuf: true,        /* Upload failure */
 			messagesf: true,        /* Server login failure */
 			messagest: true,        /* Server connection timeout */
-			nostart:   false,       /* Upload without starting the torrent automatically */
+			nostart:   true,       /* Upload without starting the torrent automatically */
 			timeout:   15,          /* Timeout value, in seconds, for server connections */
 			console:   true,        /* Show console output */
-			promos:    true,        /* keep track of promo messages? */
+			promos:    false,        /* keep track of promo messages? */
 			enabled:   true	 	/* is extension enabled */
 		},
 		notificationDelay: 5000,

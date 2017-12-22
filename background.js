@@ -1,8 +1,8 @@
 if(typeof(net) == "undefined") var net = {};
 if(!net.xirvik) net.xirvik = {};
-net.xirvik.seedbox = (function(my) 
+net.xirvik.seedbox = (function(my)
 {
-	my.extension = 
+	my.extension =
 	{
 		try_no: 0,
 
@@ -27,7 +27,7 @@ net.xirvik.seedbox = (function(my)
 			if(options['not_add_path'])
 				formData.append("not_add_path","on");
 			if(options['fast_resume'])
-				formData.append("fast_resume","on");				
+				formData.append("fast_resume","on");
 			if(options.magnet)
 				formData.append("url", options.data);
 			else
@@ -45,7 +45,7 @@ net.xirvik.seedbox = (function(my)
 				success: my.standardSuccessHandling,
 				error: function( status )
 				{
-					if(my.getOption('messageuf'))					
+					if(my.getOption('messageuf'))
 						my.standardErrorHandling(status,server.url,my.t("torrent_upload_fail"));
 				}
 			});
@@ -105,7 +105,7 @@ net.xirvik.seedbox = (function(my)
 				},
 				error: function( status )
 				{
-					if(my.getOption('messageuf'))					
+					if(my.getOption('messageuf'))
 						my.standardErrorHandling(status, server.url, my.t("torrent_upload_fail"));
 				},
 				success: function()
@@ -133,7 +133,7 @@ net.xirvik.seedbox = (function(my)
 						success: my.standardSuccessHandling,
 						error: function( status )
 						{
-							if(my.getOption('messageuf'))					
+							if(my.getOption('messageuf'))
 								my.standardErrorHandling(status,server.url,my.t("torrent_upload_fail"));
 						}
 					});
@@ -152,15 +152,15 @@ net.xirvik.seedbox = (function(my)
 					'url': url+'json',
 					base: server.url,
 	                        	user: server.user,
-        	                	pass: server.pass,					
+        	                	pass: server.pass,
 					method: 'POST',
 					data: JSON.stringify(
 					{
 						method: 'web.add_torrents',
-						params: 
+						params:
 						[[{
 							path: contents,
-							options: 
+							options:
 							{
 								add_paused: my.getOption("nostart"),
 							}
@@ -169,7 +169,7 @@ net.xirvik.seedbox = (function(my)
 					}),
 					headers:
 					{
-						"Content-Type": "application/json", 
+						"Content-Type": "application/json",
 					},
 					success: function( json, req, options )
 					{
@@ -183,7 +183,7 @@ net.xirvik.seedbox = (function(my)
 					},
 					error: function( status )
 					{
-						if(my.getOption('messageuf'))					
+						if(my.getOption('messageuf'))
 							my.standardErrorHandling(status, server.url, my.t("torrent_upload_fail"));
 					}
 				});
@@ -199,11 +199,11 @@ net.xirvik.seedbox = (function(my)
 				data: "{\"method\":\"auth.login\",\"params\":[\""+server.deluge_pass+"\"],\"id\":2}",
 				headers:
 				{
-					"Content-Type": "application/json", 
+					"Content-Type": "application/json",
 				},
 				error: function( status )
 				{
-					if(my.getOption('messageuf'))					
+					if(my.getOption('messageuf'))
 						my.standardErrorHandling(status, server.url, my.t("torrent_upload_fail"));
 				},
 				success: function( json )
@@ -221,12 +221,12 @@ net.xirvik.seedbox = (function(my)
 								'url': url+'upload',
 								base: server.url,
 				                        	user: server.user,
-       	                					pass: server.pass,						
+       	                					pass: server.pass,
 								method: 'POST',
                                 			        data: formData,
 								error: function( status )
 								{
-									if(my.getOption('messageuf'))					
+									if(my.getOption('messageuf'))
 										my.standardErrorHandling(status, server.url, my.t("torrent_upload_fail"));
 								},
 								success: function( json )
@@ -251,7 +251,7 @@ net.xirvik.seedbox = (function(my)
 			{
 				if( my.getOption('messageuf') )
 				{
-					my.notify('error',"tflux_not_support",server.url);	
+					my.notify('error',"tflux_not_support",server.url);
 				}
 			}
 			else
@@ -271,9 +271,9 @@ net.xirvik.seedbox = (function(my)
 					success: my.standardSuccessHandling,
 					error: function( status )
 					{
-						if(my.getOption('messageuf'))					
+						if(my.getOption('messageuf'))
 							my.standardErrorHandling(status, server.url, my.t("torrent_upload_fail"));
-					}							
+					}
 				});
 			}
 		},
@@ -286,7 +286,7 @@ net.xirvik.seedbox = (function(my)
                         	'url': url+"token.html",
                         	base: server.url,
                         	user: server.user,
-                        	pass: server.pass,                        	
+                        	pass: server.pass,
 				success: function( data, req )
 				{
 					var token = req.responseText.match(/<html><div id='token' style='display:none;'>(.*)<\/div><\/html>/);
@@ -317,7 +317,7 @@ net.xirvik.seedbox = (function(my)
 							success: my.standardSuccessHandling,
 							error: function( status )
 							{
-								if(my.getOption('messageuf'))					
+								if(my.getOption('messageuf'))
 									my.standardErrorHandling(status, server.url, my.t("torrent_upload_fail"));
 							}
                                        	        });
@@ -327,21 +327,21 @@ net.xirvik.seedbox = (function(my)
 				},
 				error: function( status )
 				{
-					if(my.getOption('messageuf'))					
+					if(my.getOption('messageuf'))
 						my.standardErrorHandling(status, server.url, my.t("torrent_upload_fail"));
 				}
-			});				
+			});
 		},
 
 		openURL: function( url )
 		{
-			chrome.tabs.query( { url: my.addslash(url), currentWindow: true }, function(tabs) 
+			chrome.tabs.query( { url: my.addslash(url), currentWindow: true }, function(tabs)
 			{
 				if(tabs.length)
 					chrome.tabs.update(tabs[0].id, { active: true });
 				else
 					chrome.tabs.create({"url" : url});
-			});			
+			});
 		},
 
 		onPromoClick: function()
@@ -399,13 +399,13 @@ net.xirvik.seedbox = (function(my)
 			if(options)
 				this.options = options;
 			my.storage.put("options",this.options);
-			chrome.tabs.query( {}, function(tabs) 
+			chrome.tabs.query( {}, function(tabs)
 			{
 				for(var i = 0; i < tabs.length; i++)
 				{
 					chrome.tabs.sendMessage(tabs[i].id, { type: "optionschanged", options: my.extension.options } , function()
 					{
-						if(chrome.runtime.lastError) 
+						if(chrome.runtime.lastError)
 						{
 //							 console.warn("Whoops.. " + chrome.runtime.lastError.message);
 						}
@@ -432,24 +432,24 @@ net.xirvik.seedbox = (function(my)
 				{
 					my.extension.transfer( server, { data: e.linkUrl, id: tabs[0].id } );
 				});
-			}				
+			}
 		},
-		
+
 		createContextMenuItem: function(index,root)
 		{
 			var server = this.options.servers[index];
 			var name = server.descr.length ? server.descr : my.getHost(server.url)+ " (" + server.client + ")";
 			if(this.options.servers.length==1)
 				name = my.t("upload_to")+name;
-			var options = 
+			var options =
         	        {
-				title: name, 
+				title: name,
 				contexts: ["link"],
 				onclick: this.onContextMenu,
 				parentId: root
 			};
 			if(this.options.capture==0)
-				options.targetUrlPatterns = ["*://*/*.torrent*"];				
+				options.targetUrlPatterns = ["*://*/*.torrent*"];
 			server.menu = chrome.contextMenus.create( options );
 		},
 
@@ -464,8 +464,8 @@ net.xirvik.seedbox = (function(my)
                         	{
 					var options =
 					{
-						type: "normal", 
-						title: my.t("upload_to_seedbox"), 
+						type: "normal",
+						title: my.t("upload_to_seedbox"),
 						contexts: ["link"]
 					};
 					if(this.options.capture==0)
@@ -479,11 +479,11 @@ net.xirvik.seedbox = (function(my)
 			}
 			chrome.contextMenus.create(
 			{
-				title: my.t("enable"), 
+				title: my.t("enable"),
 				contexts: ["browser_action"],
 				type: "checkbox",
 				checked: my.getOption('enabled'),
-				onclick: function(info) 
+				onclick: function(info)
 				{
 					my.extension.options['enabled'] = info.checked;
 					my.extension.setOptions();
@@ -500,7 +500,7 @@ net.xirvik.seedbox = (function(my)
 				{
 					my.extension.setOptions( request.options );
 					my.extension.makeMenu();
-				}			
+				}
 				case 'getoptions':
 				{
 					sendResponse( my.extension.options );
@@ -509,7 +509,7 @@ net.xirvik.seedbox = (function(my)
 				case 'loadmagnet':
 				{
 					my.extension.retrieveServer( sender.tab.id, request.url );
-					break;				
+					break;
 				}
 				case 'notification':
 				{
@@ -517,7 +517,7 @@ net.xirvik.seedbox = (function(my)
 				}
 			}
 		},
-		
+
 		showNotification: function( theme, text, url, isPromo )
 		{
 			chrome.notifications.create(
@@ -530,7 +530,7 @@ net.xirvik.seedbox = (function(my)
 			{
 				my.extension.notifications[id] = { promo: isPromo, url: url };
 				if(!isPromo)
-				{ 
+				{
 					setTimeout( function()
 					{
 						chrome.notifications.clear(id);
@@ -563,7 +563,7 @@ net.xirvik.seedbox = (function(my)
 							if(hdr)
 								options.name = hdr[1];
 						}
-						options.url = options.data;						
+						options.url = options.data;
 						options.data = xhr.response;
 						my.bencode( options.data, function( info )
 						{
@@ -575,7 +575,7 @@ net.xirvik.seedbox = (function(my)
 							if( my.getOption('messagedf') )
 								my.standardErrorHandling(-2, server.url, my.t("download_not_torrent"));
 						});
-						
+
 					},
 					error: function(status)
 					{
@@ -591,9 +591,9 @@ net.xirvik.seedbox = (function(my)
 			my.extension.download( options, function(options)
 			{
 				my.extension.retrieveOptions( server, options, my.extension.upload );
-			}, server);		
+			}, server);
 		},
-		
+
 		retrieveServer: function( tabId, url )
 		{
 			chrome.tabs.sendMessage(tabId, { type: "dialog", name: "seedboxes" }, function(data)
@@ -602,9 +602,9 @@ net.xirvik.seedbox = (function(my)
 				{
 					var server = my.extension.options.servers[data.index];
 					my.extension.transfer( server, { data: url, id: tabId } );
-				}					
+				}
 			});
-		},			
+		},
 
 		retrieveOptions: function( server, options, callback )
 		{
@@ -619,7 +619,7 @@ net.xirvik.seedbox = (function(my)
 					{
 						if((server.dir_type=="Permanent") || (server.label_type=="Permanent"))
 							replacement = options.info;
-						replacement['{HOST}'] = my.getHost(options.url);							
+						replacement['{HOST}'] = my.getHost(options.url);
 					}
 					replacement['{DATE}'] = (new Date()).toISOString().substr(0,10);
 					replacement['{HOST}'] = replacement['{HOST}'] || '';
@@ -628,7 +628,7 @@ net.xirvik.seedbox = (function(my)
 
 				        if(server.dir_type=="Permanent")
 				        {
-				        	options.directory = server.dir;	
+				        	options.directory = server.dir;
 				        	for(var i in replacement)
 				        	{
 				        		var r = new RegExp(i,'ig');
@@ -667,9 +667,9 @@ net.xirvik.seedbox = (function(my)
 								ret["basedir"] = ret["basedir"] || "";
 								if( (server.label_type=="At runtime") || (server.dir_type=="At runtime") )
 								{
-									var props = 
+									var props =
 									{
-										type: "dialog", 
+										type: "dialog",
 										name: "upload_options",
 									};
 									if(server.label_type=="At runtime")
@@ -691,7 +691,7 @@ net.xirvik.seedbox = (function(my)
 											options.fast_resume = data.fast_resume;
 											options.not_add_path = data.not_add_path;
 											callback(server,options);
-										}											
+										}
 									});
 								}
 								else
@@ -711,11 +711,11 @@ net.xirvik.seedbox = (function(my)
 				default:
 				{
 					callback(server,options);
-					break;					
+					break;
 				}
 			}
 		},
-		
+
 		upload: function( server, options )
 		{
 			if(my.getOption('messageus'))
@@ -728,7 +728,7 @@ net.xirvik.seedbox = (function(my)
 				if(my.getOption('messageuf'))
 					my.notify('error','Upload function not found.',server.url);
 		},
-		
+
 		configInProgress: false,
 
 		parseConfigXML: function( xml, user, pass )
@@ -829,15 +829,15 @@ net.xirvik.seedbox = (function(my)
 
 		configHandler: function(details)
 		{
-			if( !my.extension.configInProgress && 
-				(details.type != "xmlhttprequest") && 
+			if( !my.extension.configInProgress &&
+				(details.type != "xmlhttprequest") &&
 				(details.tabId>=0) &&
 				my.extension.options.enabled )
 			{
 				my.extension.configInProgress = true;
 				var type = null;
 				var user = null;
-				var pass = null;				
+				var pass = null;
 				for(var i = 0; i < details.responseHeaders.length; i++)
        	        		{
 					var header = details.responseHeaders[i];
@@ -879,19 +879,19 @@ net.xirvik.seedbox = (function(my)
 						error: function()
 						{
 							my.notify("error","autoconfiguration_failed");
-							my.extension.configInProgress = false;							
+							my.extension.configInProgress = false;
 						}
 					});
 				}
-				return( { redirectUrl: 'javascript:void()' } );				
+				return( { redirectUrl: 'javascript:void()' } );
 			}
 		},
 
 		torrentHandler: function(details)
 		{
-			if((details.type != "xmlhttprequest") && 
-				(details.tabId>=0) && 
-				my.getOption('click') && 
+			if((details.type != "xmlhttprequest") &&
+				(details.tabId>=0) &&
+				my.getOption('click') &&
 				my.extension.options.servers.length &&
 				my.extension.options.enabled)
 			{
@@ -904,7 +904,7 @@ net.xirvik.seedbox = (function(my)
 					{
 						case "content-type":
 						{
-							isTorrent = isTorrent || (header.value.indexOf("application/x-bittorrent") != -1) || 
+							isTorrent = isTorrent || (header.value.indexOf("application/x-bittorrent") != -1) ||
 								 ((header.value.indexOf("application/octet-stream") != -1) && tName);
 							break;
 						}
@@ -912,7 +912,7 @@ net.xirvik.seedbox = (function(my)
 						{
 							isTorrent = isTorrent || header.value.match(/\.torrent$/i);
 							break;
-						
+
 						}
 					}
 				}
@@ -962,7 +962,7 @@ net.xirvik.seedbox = (function(my)
 			{
 				urls: [ my.conf.confFilter ]
 			}, ["responseHeaders", "blocking"]);
-			chrome.webRequest.onHeadersReceived.addListener( my.extension.torrentHandler, 
+			chrome.webRequest.onHeadersReceived.addListener( my.extension.torrentHandler,
 			{
 				urls: ["*://*/*"]
 			}, ["responseHeaders", "blocking"] );
@@ -971,7 +971,6 @@ net.xirvik.seedbox = (function(my)
 			my.extension.setupNotifications();
 			my.extension.qBittorrentFilteredURLs = {};
 			browser.browserAction.onClicked.addListener(my.extension.openOptionsPage);
-			setInterval( my.extension.promoThread, my.conf.promoInterval );
 		},
 
 		init: function()
@@ -980,6 +979,6 @@ net.xirvik.seedbox = (function(my)
 		}
 	};
 
-	my.extension.init();	
+	my.extension.init();
 	return(my);
 })(net.xirvik.seedbox || {});
