@@ -1,0 +1,227 @@
+Manifest-Version: 1.0
+
+Name: background.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PSHrR9+FWw8LzJdKT5UpEQ==
+SHA1-Digest: 80/g/cMC650DZkTBZ2ID1K2HMfM=
+
+Name: background.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: kBb0oYeUpZAHti7K/GHqWQ==
+SHA1-Digest: 3+UyhyVehNxaxJ4k1SKhyCUon8k=
+
+Name: config.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: QjsWAUE34+G1xbG/XB2zqg==
+SHA1-Digest: SYGF1dgm4nMbrXWvKqC1x2U+Ppo=
+
+Name: content.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: CjvaXFzIm+0c+tJrXEvvNw==
+SHA1-Digest: tHl5iEIzIaaJ7xaaR1oIki+HA2I=
+
+Name: document_event.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yEbvJxG5stlDjSoG+ma+Mg==
+SHA1-Digest: rPoKXRuZ8rT407kpjOFacRzMPoQ=
+
+Name: jquery-ui.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: t1ujTyqF33txhptm5GmipQ==
+SHA1-Digest: rnYLnc9eLN3f46bZ+rjc1K7O564=
+
+Name: jquery.fancybox.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: zJ51nyS6dzru+KExiJ03KA==
+SHA1-Digest: UzYHZLQpwhL0JDmThEF8zCM7s74=
+
+Name: jquery.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yfWu7KOtN78qoAYTm5NfCg==
+SHA1-Digest: EFUBjCirQQh++czv5BFgaJPavqI=
+
+Name: manifest.json
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: oQSfT9/5mR1j4jVH6eCIaQ==
+SHA1-Digest: TQ9oQoyTboj6deYJYN+ywP+hXBg=
+
+Name: options.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: rmeIoeE+AVzND66m+TN4Bg==
+SHA1-Digest: 6sHHyciQCgYE0Q8FPbxvHeFFrDA=
+
+Name: options.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: CMCAfXDGXXS+/xNKnbHEZQ==
+SHA1-Digest: 0cK0pqdersNNtv8BbAYVZPVusiI=
+
+Name: seedboxes.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: hF7+RJLaQV4mY7RHZkcKIg==
+SHA1-Digest: d3ROsGvQxUiwFhxLLSvRYjKerF4=
+
+Name: upload_options.html
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: rzpv196AAjZ1so3U+nwyQQ==
+SHA1-Digest: Dq45RFTfK4Q0LFYj93zkFkLlsjs=
+
+Name: util.js
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PNZrrV6fN8OxozbXYURmvw==
+SHA1-Digest: MUr6xpkeOGgOl7484qMeHt4y4q8=
+
+Name: _locales/en/messages.json
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: esHW/E8GteUManjYyuXdrg==
+SHA1-Digest: 8IMH0RD1GGkRGaVz6qq8SUoO2Aw=
+
+Name: css/dialogs.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: USlgu9jABDNL/PH2VC/lvQ==
+SHA1-Digest: humsDSZDdoMpA0K5pN8y57k+q48=
+
+Name: css/jquery.fancybox.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: yFBAFBPk0qzouhzkbyIjqw==
+SHA1-Digest: 37ooJA6wtNuZkMxK1kjUYYPV9Q8=
+
+Name: css/options.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: AhOZrRd/GYREOS9z0lPfEQ==
+SHA1-Digest: JpjAVaUnTN9uYJ+xud8Acrle4QQ=
+
+Name: css/ui-lightness/jquery-ui.css
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: u9R+QXGlC90HdEWFTJkejg==
+SHA1-Digest: 6Tc3+0WrqyKHHjWPdX6JEVV21Kc=
+
+Name: css/ui-lightness/images/ui-bg_flat_0_aaaaaa_40x100.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: KkT723NgxgEivPbc7wOH2A==
+SHA1-Digest: 2hyb9FvTZEwt3/zU9jEQjYDmpvI=
+
+Name: css/ui-lightness/images/ui-bg_flat_75_ffffff_40x100.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: hpLm7934gqy/8UTDjqff3w==
+SHA1-Digest: qbsTHErP8NB/p7fyG+8FF5wo0Ts=
+
+Name: css/ui-lightness/images/ui-bg_glass_55_fbf9ee_1x400.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: +PRVjguS/yzWE2eBUzkC7A==
+SHA1-Digest: SWYVP1JgzItbnqOv1b1rDe5bx7E=
+
+Name: css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 5ajzLij9XCe/D+0zyKi5tQ==
+SHA1-Digest: flyZ6fARO6a2PCu0CLg0cZExbNo=
+
+Name: css/ui-lightness/images/ui-bg_glass_75_dadada_1x400.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: wSxlENrT6/pkyKMOlZokaQ==
+SHA1-Digest: EentWn24PPhgNAaOT23kwvJz8ME=
+
+Name: css/ui-lightness/images/ui-bg_glass_75_e6e6e6_1x400.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 9CVDVsKoyaODIF7yxN4ixA==
+SHA1-Digest: yB6m+6TbiX31mWcMa/OztXZNTlQ=
+
+Name: css/ui-lightness/images/ui-bg_glass_95_fef1ec_1x400.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: Wjvi2P/4Mk1ZrsPfewoMgw==
+SHA1-Digest: YUB5nDOPn6XMzk+yk0ZRKAZGKmA=
+
+Name: css/ui-lightness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: csWT0W6ZiVLNjXmP7jPG8w==
+SHA1-Digest: U7UJmcTJg4oqKhkLVCA6ucasuyE=
+
+Name: css/ui-lightness/images/ui-icons_222222_256x240.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 6+a2kCpAj7+crGN5oUd1JQ==
+SHA1-Digest: 1t7g6vdpKcTgay8rwwWL2tHQofw=
+
+Name: css/ui-lightness/images/ui-icons_2e83ff_256x240.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: K5ml5I08OVfQMCfTaiXouw==
+SHA1-Digest: XAgAKRqNxBrpFdn+bUL5bGcDWiM=
+
+Name: css/ui-lightness/images/ui-icons_454545_256x240.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: EZ3QwulK1onehz7zn9Q+bg==
+SHA1-Digest: GrGd94LQuEkfwhwe33sglBYk3TQ=
+
+Name: css/ui-lightness/images/ui-icons_888888_256x240.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: nEbXyrQ+IqFLrSbS1IBtgA==
+SHA1-Digest: SIryxRrNCX6RNtTdHwhQFo6N52A=
+
+Name: css/ui-lightness/images/ui-icons_cd0a0a_256x240.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PkUMKixmMo2UmOcAGtcZfA==
+SHA1-Digest: zA0c2mkpfdUD2oVziXb/iuXiwPU=
+
+Name: images/blank.gif
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: MlRyYBVx8x4b8AZ0w2jTNQ==
+SHA1-Digest: La6qi18Z8LwgnZdsAr1qy1GwCwo=
+
+Name: images/fancybox_loading.gif
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: MozA9seCEUhQWNRg6A9PqA==
+SHA1-Digest: GnVfslmfOjE8xs/bFN8EP4wUqZw=
+
+Name: images/fancybox_loading@2x.gif
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: +Sk4Y5+olKDo3tHDNoq+mA==
+SHA1-Digest: JzsSNJakK6RcNBatsCfNmXRQWLA=
+
+Name: images/fancybox_overlay.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: d66qUnFbiYtzx01oxjAzDg==
+SHA1-Digest: s6TuZFuklPUoQO+EEgFboPRl2+A=
+
+Name: images/fancybox_sprite.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: eD1AMf5Qw9g8lgkR4fvHBQ==
+SHA1-Digest: F98Z+XYo53vgnDUr8nQl+uokglE=
+
+Name: images/fancybox_sprite@2x.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: 7ZlwziIkJCHmb/FQqpf+Xw==
+SHA1-Digest: MMWJE/Mn4o9GagD0wayAAbVgrtg=
+
+Name: images/xirvik-128.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: qa57K/pt6VUHx6louLuOzw==
+SHA1-Digest: 265+C0TTfLgqqPaNkYFukh2SUCo=
+
+Name: images/xirvik-16.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: WDr0I81DhG+VqOrBInkxMg==
+SHA1-Digest: zzxyUcSI5nuMcvpdDvgyMZ8zJYM=
+
+Name: images/xirvik-32.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: BKgeAURCQXA58si39gcx3A==
+SHA1-Digest: HzHIezmGXNJvGIzhRQHSbh2k+BA=
+
+Name: images/xirvik-48.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: bwuW5GLH1nAnB6mGT54Z+Q==
+SHA1-Digest: TPAxf3wpzSZ8ieh6U1tiUYqnmR0=
+
+Name: images/xirvik-64.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: oz9TtAxZ3srTyIt5vYaJbQ==
+SHA1-Digest: 7Yqa4wIGw0o+W07rWQlHozIkSQc=
+
+Name: images/xirvik-96.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: PXbe8y/8s0Qf3akiYlj6lg==
+SHA1-Digest: eJ3sgvE9nwl8OGP4GJ0gSOQ78YM=
+
+Name: images/xirvik.png
+Digest-Algorithms: MD5 SHA1
+MD5-Digest: +B48TseA9Tf14pWXjMQQ5w==
+SHA1-Digest: sdfQtg4NjdH6AoE6djjlC4GZhJQ=
+
